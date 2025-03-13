@@ -28,8 +28,13 @@ shakeH1El.addEventListener ("mouseover", (event) => {
 
 
 
+//Isa's løsninger
 
 /*3. Brug javascript til at skifte billedet ud i .bigPicture-boksen, brug dette eller noget helt andet: https://cdn.pixabay.com/photo/2017/09/28/13/18/amusement-2795490_960_720.jpg */
+//Finder elementet hvor billedet skal skiftes
+const bigPictureEl = document.querySelector(".bigPicture");
+console.log('bigPictureEl:', bigPictureEl)
+bigPictureEl.style.backgroundImage = "url('/assets/img/amusement-2795490_960_720.jpg')";
 
 
 
