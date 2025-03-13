@@ -1,6 +1,9 @@
 /*1. Anvende javascript til at skifte farven i de sociale elementer (twitter, facebook og instagram) til en mere passende farve (jeres vurdering) */
-
-
+let newSocialEl = document.querySelectorAll("i");
+// newSocialEl.style.color = "violet";
+newSocialEl.forEach(function(e){
+   e.style.color = "violet";
+});
 
 
 
@@ -10,10 +13,12 @@
 
 
 /*2. Se den lidt skæve h1 i header - sørg for den ved hover "shaker"/ryster sig lidt. I bedes anvende javascript til at løse denne opgave - måske i kombination med css. Der findes endda js libraries/biblioteker I kan se på til formålet, f.eks. anime.js */
+// noget med mousehover og shake
+const shakeH1El = document.querySelector("h1");
 
-
-
-
+shakeH1El.addEventListener ("mouseover", (event) => {
+    event.target.
+})
 
 
 
