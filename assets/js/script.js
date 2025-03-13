@@ -52,33 +52,38 @@
 
 /*5.1 Brug javascript til at gemme teksterne væk i artiklerne <p>-tags. Indsæt istedet link med "Læs mere..." */
 
+//find det element i dom'en som skal manipuleres. 
+let article = document.querySelectorAll('article p');
 
+// Alle p-tags skal gemmes væk
+article.forEach((p) => {
+    p.style.display = 'none';
+});
 
-
-
-
-
-
-
-
-
-
-
+//indsæt et link med teksten "læs mere" der hvor teksten var før
+article.forEach((p) => {
+    let a = document.createElement('a');
+    a.href = '#';
+    a.textContent = 'Læs mere';
+    p.insertAdjacentElement('afterend', a);
+});
 
 /*5.2. Sørg for at når man trykker på "Læs mere..." vises den oprindelige tekst ovenover "Læs mere..."  */
+//fang alle "læs mere" links
+let links = document.querySelectorAll('article a');
 
-
-
-
-
-
-
-
-
-
-
+//når man klikker på "læs mere" skal teksten vises
+links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        let p = e.target.previousElementSibling;
+        p.style.display = 'block';
+    });
+});
 
 /*5.3. Sørg for at "Læs mere..." bliver lavet om til "Læs mindre..." */
+
+
 
 
 
