@@ -1,9 +1,6 @@
 /*1. Anvende javascript til at skifte farven i de sociale elementer (twitter, facebook og instagram) til en mere passende farve (jeres vurdering) */
-let newSocialEl = document.querySelectorAll("i");
-// newSocialEl.style.color = "violet";
-newSocialEl.forEach(function(e){
-   e.style.color = "violet";
-});
+
+
 
 
 
@@ -13,12 +10,6 @@ newSocialEl.forEach(function(e){
 
 
 /*2. Se den lidt skæve h1 i header - sørg for den ved hover "shaker"/ryster sig lidt. I bedes anvende javascript til at løse denne opgave - måske i kombination med css. Der findes endda js libraries/biblioteker I kan se på til formålet, f.eks. anime.js */
-// noget med mousehover og shake
-const shakeH1El = document.querySelector("h1");
-
-shakeH1El.addEventListener ("mouseover", (event) => {
-    event.target.
-})
 
 
 
@@ -28,13 +19,12 @@ shakeH1El.addEventListener ("mouseover", (event) => {
 
 
 
-//Isa's løsninger
+
+
+
+
 
 /*3. Brug javascript til at skifte billedet ud i .bigPicture-boksen, brug dette eller noget helt andet: https://cdn.pixabay.com/photo/2017/09/28/13/18/amusement-2795490_960_720.jpg */
-//Finder elementet hvor billedet skal skiftes
-const bigPictureEl = document.querySelector(".bigPicture");
-console.log('bigPictureEl:', bigPictureEl)
-bigPictureEl.style.backgroundImage = "url('/assets/img/amusement-2795490_960_720.jpg')";
 
 
 
